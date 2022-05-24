@@ -15,7 +15,7 @@ body{
 }
 form{
     background-color: white;
-    width: 70%;
+    width: max(70%, 500px);
     height: 100%;
     display: flex;
     justify-content: center;
@@ -24,8 +24,13 @@ form{
 }
 .form-inputs{
     display: flex;
-    justify-content: row;
+    
     height: 40%;
+    justify-content: space-around;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+    box-shadow: 5px 5px 10px 0px gray;
+    margin: 10px 10px 30px 10px;
 }
 
 .left-inputs,
@@ -34,6 +39,7 @@ form{
 display: flex;
 flex-direction: column;
 justify-content: center;
+width: max(40%, 200px);
 }
 form>p{
     width: 100%;
@@ -43,6 +49,7 @@ form>p{
 .form-inputs>div>div{
     display: flex;
     flex-direction: column;
+    width: max(50px, 100%);
 }
 
 input{
@@ -59,6 +66,67 @@ input:focus{
     border-color: lightpink;
     box-shadow: 5px 5px 10px 0px lightgray;
 }
-/* input:focus:invalid{
+input:required:invalid{
     border-color: red;
-} */
+}
+input:required:valid{
+    border-color: rgb(50, 200, 50);
+}
+button[type='submit']{
+    align-items: left;
+    background-color: rgb(177, 89, 177);
+    font-size: 1.5rem;
+    color: white;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(177, 89, 177);
+    box-shadow: 5px 5px 10px 0px gray;
+    padding: 10px 20px;
+
+}
+
+.submitBtn{
+    display: flex;
+    width: 95%;
+    justify-content: left;
+}
+button[type='submit']:active{
+    background-color: pink;
+    border-color: pink;
+    box-shadow: 5px 5px 15px 0px gray;
+}
+.upper-text{
+    font-size: 1.5rem;
+    margin: 5px;
+}
+.upper-text p:first-child{
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-weight: bold;
+}
+.already-have-an-account{
+    width: 95%;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+
+}
+.already-have-an-account>p{
+    margin-right: 10px;
+    font-size: large;
+}
+.already-have-an-account>a{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    text-decoration: none;
+    color:rgb(223, 103, 123);
+}
+.already-have-an-account>a:hover{
+    color: rgb(143, 36, 54);
+}
+.already-have-an-account>a:active{
+    color: rgb(91, 21, 32);
+}

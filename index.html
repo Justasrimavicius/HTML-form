@@ -11,7 +11,8 @@
     <div class="outter-box">
         <form action="some-backend-place/" method="post">
             <div class="upper-text">
-
+                <p>This is a mock-up signup form. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras venenatis ac tortor et tempor. Donec et accumsan lacus. Quisque ut lacus fermentum, lobortis mi sed, mattis tellus. Etiam ac varius.</p>
             </div>
             <p>Required fields are followed by <abbr title="required" aria-label="required">*</abbr>.</p>
             <div class="form-inputs">
@@ -32,7 +33,7 @@
                 <div class="right-inputs">
                     <div>
                         <label for="phone_number">Phone number: </label>
-                        <input type="text" id="phone_number" name="phone_number" placeholder="864734542" pattern=".{0}|.{9}" title="Must be 9 characters length">
+                        <input type="text" id="phone_number" name="phone_number" placeholder="864734542" pattern="[0-9].{8}" title="Must be 9 characters length" required>
                     </div>
                     <div>
                         <label for="password">Password: <abbr title="required" aria-label="required">*</abbr></label>
@@ -44,9 +45,12 @@
                     </div>   
                 </div>   
             </div>
-            <div>
-                <input type="button">
-            </div>    
+            <div class="submitBtn">
+                <button type="submit">Create account</button>
+            </div>
+            <div class="already-have-an-account">
+                <p>Already have an account?</p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Sign in</a>
+            </div>
         </form>
     </div>
 </body>
